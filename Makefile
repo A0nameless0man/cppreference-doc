@@ -229,7 +229,7 @@ indexes:
 	./index2autolinker.py index-functions-c.xml output/indexes/autolink-c
 	./index2autolinker.py index-functions-cpp.xml output/indexes/autolink-cpp
 
-#redownloads the source documentation directly from en.cppreference.com
+#redownloads the source documentation directly from zh.cppreference.com
 source:
 	rm -rf "reference"
 	mkdir "reference"
@@ -238,15 +238,15 @@ source:
 	regex=".*index\\.php.*|.*/Special:.*|.*/Talk:.*" \
 	regex+="|.*/Help:.*|.*/File:.*|.*/Cppreference:.*" \
 	regex+="|.*/WhatLinksHere:.*|.*/Template:.*|.*/Category:.*" \
-	regex+="|.*action=.*|.*printable=.*|.*en.cppreference.com/book.*" ; \
+	regex+="|.*action=.*|.*printable=.*|.*zh.cppreference.com/book.*" ; \
 	echo $$regex ; \
 	wget --adjust-extension --page-requisites --convert-links \
 		--force-directories --recursive --level=15 \
-		--span-hosts --domains=en.cppreference.com,upload.cppreference.com \
+		--span-hosts --domains=zh.cppreference.com,upload.cppreference.com \
 		--reject-regex $$regex \
 		--timeout=5 --tries=50 --no-verbose \
 		--retry-connrefused --waitretry=10 --read-timeout=20 \
-		https://en.cppreference.com/w/ ; \
+		https://zh.cppreference.com/w/ ; \
 	popd > /dev/null
 
-	./export.py --url=http://en.cppreference.com/mwiki reference/cppreference-export-ns0,4,8,10.xml 0 4 8 10
+	./export.py --url=http://zh.cppreference.com/mwiki reference/cppreference-export-ns0,4,8,10.xml 0 4 8 10
