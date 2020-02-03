@@ -382,7 +382,7 @@ def remove_unused_external(html):
 
 
 def preprocess_html_file(root, fn, rename_map):
-    parser = etree.HTMLParser()
+    parser = etree.HTMLParser(encoding='utf-8')
     html = etree.parse(fn, parser)
     output = io.StringIO()
 
@@ -403,7 +403,7 @@ def preprocess_html_file(root, fn, rename_map):
 
     for err in list(parser.error_log):
         print("HTML WARN: {0}".format(err), file=output)
-
+    # print(etree.tostring(html))
     html.write(fn, encoding='utf-8', method='html')
     return output.getvalue()
 
