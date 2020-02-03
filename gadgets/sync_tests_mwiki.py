@@ -114,7 +114,7 @@ def perform_sync(url, direction, dest_root, title_filter, user, password,
     # Supply information to config that would otherwise be defined in
     # user-config.py
     pywikibot.config2.family = 'cppreference'
-    pywikibot.config2.mylang = 'en'
+    pywikibot.config2.mylang = 'zh'
     pywikibot.config2.family_files['cppreference'] = url
     pywikibot.config2.step = 100
     pywikibot.config2.put_throttle = 0

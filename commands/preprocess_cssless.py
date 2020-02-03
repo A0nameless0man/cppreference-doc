@@ -46,7 +46,7 @@ def preprocess_html_merge_cssless(src_path, dst_path):
     head = os.path.dirname(dst_path)
     os.makedirs(head, exist_ok=True)
 
-    with open(dst_path, 'wb') as a_file:
+    with open(dst_path, 'wb',) as a_file:
         root.getroottree().write(a_file, pretty_print=True, method="html",
                                  encoding='utf-8')
     return output

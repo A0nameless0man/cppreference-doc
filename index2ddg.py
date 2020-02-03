@@ -465,7 +465,7 @@ def process_identifier(out, redirects, root, link, item_ident, item_type,
         abstract = abstract.replace('\n', '\\n')
         line += abstract + '\t'
         # source url
-        line += 'http://en.cppreference.com/w/' + link + '\n'
+        line += 'http://zh.cppreference.com/w/' + link + '\n'
         out.write(line)
 
         build_redirects(redirects, item_ident, item_type)

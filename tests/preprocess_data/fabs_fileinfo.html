@@ -1,15 +1,15 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr" class="client-nojs">
+<html lang="zh" dir="ltr" class="client-nojs">
 <head>
 <title>std::abs(float), std::fabs - cppreference.com</title>
 <meta charset="UTF-8">
 <meta name="generator" content="MediaWiki 1.21.2">
-<link rel="alternate" type="application/x-wiki" title="Edit" href="https://en.cppreference.com/mwiki/index.php?title=cpp/numeric/math/fabs&amp;action=edit">
-<link rel="edit" title="Edit" href="https://en.cppreference.com/mwiki/index.php?title=cpp/numeric/math/fabs&amp;action=edit">
+<link rel="alternate" type="application/x-wiki" title="Edit" href="https://zh.cppreference.com/mwiki/index.php?title=cpp/numeric/math/fabs&amp;action=edit">
+<link rel="edit" title="Edit" href="https://zh.cppreference.com/mwiki/index.php?title=cpp/numeric/math/fabs&amp;action=edit">
 <link rel="shortcut icon" href="../../../../favicon.ico">
 <link rel="search" type="application/opensearchdescription+xml" href="../../../../mwiki/opensearch_desc.php" title="cppreference.com (en)">
-<link rel="EditURI" type="application/rsd+xml" href="https://en.cppreference.com/mwiki/api.php?action=rsd">
-<link rel="alternate" type="application/atom+xml" title="cppreference.com Atom feed" href="https://en.cppreference.com/mwiki/index.php?title=Special:RecentChanges&amp;feed=atom">
+<link rel="EditURI" type="application/rsd+xml" href="https://zh.cppreference.com/mwiki/api.php?action=rsd">
+<link rel="alternate" type="application/atom+xml" title="cppreference.com Atom feed" href="https://zh.cppreference.com/mwiki/index.php?title=Special:RecentChanges&amp;feed=atom">
 <link rel="stylesheet" href="../../../../mwiki/load.php%3Fdebug=false&amp;lang=en&amp;modules=ext.gadget.ColiruCompiler,MathJax%7Cext.rtlcite%7Cmediawiki.legacy.commonPrint,shared%7Cskins.cppreference2&amp;only=styles&amp;skin=cppreference2&amp;*.css">
 <meta name="ResourceLoaderDynamicStyles" content="">
 <link rel="stylesheet" href="../../../../mwiki/load.php%3Fdebug=false&amp;lang=en&amp;modules=site&amp;only=styles&amp;skin=cppreference2&amp;*.css">
@@ -18,10 +18,10 @@
 
 <script src="../../../../mwiki/load.php%3Fdebug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=cppreference2&amp;*"></script>
 <script>if(window.mw){
-mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"cpp/numeric/math/fabs","wgTitle":"cpp/numeric/math/fabs","wgCurRevisionId":88521,"wgArticleId":1357,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"cpp/numeric/math/fabs","wgRestrictionEdit":[],"wgRestrictionMove":[]});
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"cpp/numeric/math/fabs","wgTitle":"cpp/numeric/math/fabs","wgCurRevisionId":88521,"wgArticleId":1357,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"zh","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"cpp/numeric/math/fabs","wgRestrictionEdit":[],"wgRestrictionMove":[]});
 }</script><script>if(window.mw){
 mw.loader.implement("user.options",function(){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"disablesuggest":0,"editfont":"default","editondblclick":0,"editsection":0,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":0,"extendwatchlist":0,"externaldiff":0,"externaleditor":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"imagesize":2,"justify":0,"math":1,"minordefault":0,"newpageshidepatrolled":0,"nocache":0,"noconvertlink":0,"norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"quickbar":5,"rcdays":7,"rclimit":50,"rememberpassword":0,"rows":25,"searchlimit":20,"showhiddencats":0,"showjumplinks":1,"shownumberswatching":1,"showtoc":0,"showtoolbar":1,"skin":"cppreference2","stubthreshold":0,"thumbsize":2,"underline":2,"uselivepreview":0,"usenewrc":0,"watchcreations":0,"watchdefault":0,"watchdeletion":0,
-"watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"variant":"en","language":"en","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"gadget-ColiruCompiler":1,"gadget-MathJax":1});;},{},{});mw.loader.implement("user.tokens",function(){mw.user.tokens.set({"editToken":"+\\","patrolToken":false,"watchToken":false});;},{},{});
+"watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"variant":"zh","language":"zh","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"gadget-ColiruCompiler":1,"gadget-MathJax":1});;},{},{});mw.loader.implement("user.tokens",function(){mw.user.tokens.set({"editToken":"+\\","patrolToken":false,"watchToken":false});;},{},{});
 /* cache key: mwiki1-mwiki_en_:resourceloader:filter:minify-js:7:9f05c6caceb9bb1a482b6cebd4c5a330 */
 }</script>
 <script>if(window.mw){
@@ -116,7 +116,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <!-- 0 -->
 <div id="p-search">
 	<h5><label for="searchInput">Search</label></h5>
-	<form action="https://en.cppreference.com/mwiki/index.php" id="searchform">
+	<form action="https://zh.cppreference.com/mwiki/index.php" id="searchform">
 		<input type="hidden" name="title" value="Special:Search">
 				<div id="simpleSearch">
 						<input name="search" title="Search cppreference.com [f]" accesskey="f" id="searchInput">						<button type="submit" name="button" title="Search the pages for this text" id="searchButton"><img src="../../../../mwiki/skins/cppreference2/images/search-ltr.png%3F303" alt="Search"></button>					</div>
@@ -129,9 +129,9 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
                         
 <!-- 0 -->
 <div id="p-personal" class="">
-<span id="pt-createaccount"><a href="https://en.cppreference.com/mwiki/index.php?title=Special:UserLogin&amp;returnto=cpp%2Fnumeric%2Fmath%2Ffabs&amp;type=signup">Create account</a></span>	<div class="menu">
+<span id="pt-createaccount"><a href="https://zh.cppreference.com/mwiki/index.php?title=Special:UserLogin&amp;returnto=cpp%2Fnumeric%2Fmath%2Ffabs&amp;type=signup">Create account</a></span>	<div class="menu">
         <ul>
-<li id="pt-login"><a href="https://en.cppreference.com/mwiki/index.php?title=Special:UserLogin&amp;returnto=cpp%2Fnumeric%2Fmath%2Ffabs" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>        </ul>
+<li id="pt-login"><a href="https://zh.cppreference.com/mwiki/index.php?title=Special:UserLogin&amp;returnto=cpp%2Fnumeric%2Fmath%2Ffabs" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>        </ul>
     </div>
 </div>
 
@@ -149,7 +149,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 	<h5>Namespaces</h5>
 	<ul>
 					<li id="ca-nstab-main" class="selected"><span><a href="fabs.html" title="View the content page [c]" accesskey="c">Page</a></span></li>
-					<li id="ca-talk" class="new"><span><a href="https://en.cppreference.com/mwiki/index.php?title=Talk:cpp/numeric/math/fabs&amp;action=edit&amp;redlink=1" title="Discussion about the content page [t]" accesskey="t">Discussion</a></span></li>
+					<li id="ca-talk" class="new"><span><a href="https://zh.cppreference.com/mwiki/index.php?title=Talk:cpp/numeric/math/fabs&amp;action=edit&amp;redlink=1" title="Discussion about the content page [t]" accesskey="t">Discussion</a></span></li>
 			</ul>
 </div>
 
@@ -173,8 +173,8 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 	<h5>Views</h5>
 	<ul>
 					<li id="ca-view" class="selected"><span><a href="fabs.html">View</a></span></li>
-					<li id="ca-edit"><span><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/numeric/math/fabs&amp;action=edit" title="You can edit this page. Please use the preview button before saving [e]" accesskey="e">Edit</a></span></li>
-					<li id="ca-history" class="collapsible"><span><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/numeric/math/fabs&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></span></li>
+					<li id="ca-edit"><span><a href="https://zh.cppreference.com/mwiki/index.php?title=cpp/numeric/math/fabs&amp;action=edit" title="You can edit this page. Please use the preview button before saving [e]" accesskey="e">Edit</a></span></li>
+					<li id="ca-history" class="collapsible"><span><a href="https://zh.cppreference.com/mwiki/index.php?title=cpp/numeric/math/fabs&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></span></li>
 			</ul>
 </div>
 
@@ -276,7 +276,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
                     <div id="contentSub"><span class="subpages">&lt; <a href="../../../cpp.html" title="cpp">cpp</a>‎ | <a href="../../numeric.html" title="cpp/numeric">numeric</a>‎ | <a href="../math.html" title="cpp/numeric/math">math</a></span></div>
                     <!-- /subtitle -->
                                                             <!-- bodycontent -->
-                    <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="t-navbar" style=""><div class="t-navbar-sep"> </div><div class="t-navbar-head"><a href="../../../cpp.html" title="cpp"> C++</a><div class="t-navbar-menu"><div><div><table class="t-nv-begin" cellpadding="0" style="line-height:1.1em;">
+                    <div id="mw-content-text" lang="zh" dir="ltr" class="mw-content-ltr"><div class="t-navbar" style=""><div class="t-navbar-sep"> </div><div class="t-navbar-head"><a href="../../../cpp.html" title="cpp"> C++</a><div class="t-navbar-menu"><div><div><table class="t-nv-begin" cellpadding="0" style="line-height:1.1em;">
 <tr class="t-nv"><td colspan="5"> <a href="../../language.html" title="cpp/language"> Language</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../../header.html" title="cpp/header"> Headers</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../../named_req.html" title="cpp/named req"> Named requirements </a> </td></tr>
@@ -296,7 +296,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="../../thread.html" title="cpp/thread"> Thread support library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../../filesystem.html" title="cpp/filesystem"> Filesystem library</a> <span class="t-mark-rev t-since-cxx17">(C++17)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../../experimental.html" title="cpp/experimental"> Technical Specifications</a> </td></tr>
-</table></div><div><span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:cpp/navbar_content&amp;action=edit">[edit]</a></span></div></div></div></div><div class="t-navbar-sep"> </div><div class="t-navbar-head"><a href="../../numeric.html" title="cpp/numeric"> Numerics library</a><div class="t-navbar-menu"><div><div><table class="t-nv-begin" cellpadding="0" style="">
+</table></div><div><span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://zh.cppreference.com/mwiki/index.php?title=Template:cpp/navbar_content&amp;action=edit">[edit]</a></span></div></div></div></div><div class="t-navbar-sep"> </div><div class="t-navbar-head"><a href="../../numeric.html" title="cpp/numeric"> Numerics library</a><div class="t-navbar-menu"><div><div><table class="t-nv-begin" cellpadding="0" style="">
 <tr class="t-nv"><td colspan="5"> <a href="../math.html" title="cpp/numeric/math">Common mathematical functions</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../special_math.html" title="cpp/numeric/special math">Special mathematical functions</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../fenv.html" title="cpp/numeric/fenv">Floating-point environment</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
@@ -325,7 +325,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../ceil2.html" title="cpp/numeric/ceil2"><span class="t-lines"><span>ceil2</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx20">(C++20)</span></span></span></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../floor2.html" title="cpp/numeric/floor2"><span class="t-lines"><span>floor2</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx20">(C++20)</span></span></span></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../log2p1.html" title="cpp/numeric/log2p1"><span class="t-lines"><span>log2p1</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx20">(C++20)</span></span></span></div></div></td></tr>
-</table></div><div><span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:cpp/numeric/navbar_content&amp;action=edit">[edit]</a></span></div></div></div></div><div class="t-navbar-sep"> </div><div class="t-navbar-head"><a href="../math.html" title="cpp/numeric/math"> Common mathematical functions</a><div class="t-navbar-menu"><div><div style="display:inline-block; vertical-align:top;">
+</table></div><div><span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://zh.cppreference.com/mwiki/index.php?title=Template:cpp/numeric/navbar_content&amp;action=edit">[edit]</a></span></div></div></div></div><div class="t-navbar-sep"> </div><div class="t-navbar-head"><a href="../math.html" title="cpp/numeric/math"> Common mathematical functions</a><div class="t-navbar-menu"><div><div style="display:inline-block; vertical-align:top;">
 <div><table class="t-nv-begin" cellpadding="0" style="">
 <tr class="t-nv-h1"><td colspan="5"> Functions</td></tr>
 <tr class="t-nv-h2"><td colspan="5"> Basic operations</td></tr>
@@ -439,7 +439,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="FP_categories.html" title="cpp/numeric/math/FP categories"><span class="t-lines"><span>FP_NORMAL</span><span>FP_SUBNORMAL</span><span>FP_ZERO</span><span>FP_INFINITE</span><span>FP_NAN</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div></td></tr>
 </table></div></td></tr>
 </table></div>
-</div><div><span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:cpp/numeric/math/navbar_content&amp;action=edit">[edit]</a></span></div></div></div></div><div class="t-navbar-sep"> </div></div>
+</div><div><span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://zh.cppreference.com/mwiki/index.php?title=Template:cpp/numeric/math/navbar_content&amp;action=edit">[edit]</a></span></div></div></div></div><div class="t-navbar-sep"> </div></div>
 <table class="t-dcl-begin"><tbody>
 <tr class="t-dsc-header">
 <td> <div>Defined in header <code><a href="../../header/cmath.html" title="cpp/header/cmath">&lt;cmath&gt;</a></code>
@@ -490,7 +490,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <td class="t-dcl-nopad">  </td>
 </tr>
 <tr class="t-dcl t-since-cxx11">
-<td> <div><span class="mw-geshi cpp source-cpp"><span class="kw4">double</span>      fabs<span class="br0">(</span> <a href="http://en.cppreference.com/w/cpp/ranges-placeholder/concepts/Integral"><span class="kw2684">Integral</span></a> arg <span class="br0">)</span><span class="sy4">;</span></span></div></td>
+<td> <div><span class="mw-geshi cpp source-cpp"><span class="kw4">double</span>      fabs<span class="br0">(</span> <a href="http://zh.cppreference.com/w/cpp/ranges-placeholder/concepts/Integral"><span class="kw2684">Integral</span></a> arg <span class="br0">)</span><span class="sy4">;</span></span></div></td>
 <td> (7) </td>
 <td> <span class="t-mark-rev t-since-cxx11">(since C++11)</span> </td>
 </tr>
@@ -512,7 +512,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <li class="toclevel-1 tocsection-6"><a href="fabs.html#See_also"><span class="tocnumber">6</span> <span class="toctext">See also</span></a></li>
 </ul>
 </td></tr></table>
-<h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/numeric/math/fabs&amp;action=edit&amp;section=1" title="Edit section: Parameters">edit</a>]</span> <span class="mw-headline" id="Parameters">Parameters</span></h3>
+<h3><span class="editsection">[<a href="https://zh.cppreference.com/mwiki/index.php?title=cpp/numeric/math/fabs&amp;action=edit&amp;section=1" title="Edit section: Parameters">edit</a>]</span> <span class="mw-headline" id="Parameters">Parameters</span></h3>
 <table class="t-par-begin">
 
 
@@ -523,7 +523,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </td>
 <td>  Value of a floating-point or <a href="../../types/is_integral.html" title="cpp/types/is integral">Integral type</a>
 </td></tr></table>
-<h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/numeric/math/fabs&amp;action=edit&amp;section=2" title="Edit section: Return value">edit</a>]</span> <span class="mw-headline" id="Return_value">Return value</span></h3>
+<h3><span class="editsection">[<a href="https://zh.cppreference.com/mwiki/index.php?title=cpp/numeric/math/fabs&amp;action=edit&amp;section=2" title="Edit section: Return value">edit</a>]</span> <span class="mw-headline" id="Return_value">Return value</span></h3>
 <p>If successful, returns the absolute value of <code>arg</code> (<code>|arg|</code>). The value returned is exact and does not depend on any rounding modes.
 </p>
 <div class="t-inheritance-diagram">
@@ -533,7 +533,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </p>
 </div>
 </div>
-<h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/numeric/math/fabs&amp;action=edit&amp;section=3" title="Edit section: Error handling">edit</a>]</span> <span class="mw-headline" id="Error_handling">Error handling</span></h3>
+<h3><span class="editsection">[<a href="https://zh.cppreference.com/mwiki/index.php?title=cpp/numeric/math/fabs&amp;action=edit&amp;section=3" title="Edit section: Error handling">edit</a>]</span> <span class="mw-headline" id="Error_handling">Error handling</span></h3>
 <p>This function is not subject to any of the error conditions specified in <a href="math_errhandling.html" title="cpp/numeric/math/math errhandling">math_errhandling</a>
 </p><p>If the implementation supports IEEE floating-point arithmetic (IEC 60559),
 </p>
@@ -541,10 +541,10 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </li><li> If the argument is ±∞, +∞ is returned
 </li><li> If the argument is NaN, NaN is returned
 </li></ul>
-<h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/numeric/math/fabs&amp;action=edit&amp;section=4" title="Edit section: Notes">edit</a>]</span> <span class="mw-headline" id="Notes">Notes</span></h3>
+<h3><span class="editsection">[<a href="https://zh.cppreference.com/mwiki/index.php?title=cpp/numeric/math/fabs&amp;action=edit&amp;section=4" title="Edit section: Notes">edit</a>]</span> <span class="mw-headline" id="Notes">Notes</span></h3>
 <p>Between C++11 and C++14, the standard erroneously required <code>std::abs</code> to have overloads for integer types returning <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">double</span></span></span>. This requirement was removed in C++17 by <a rel="nofollow" class="external text" href="http://wg21.link/lwg2735">defect report 2735</a>.
 </p>
-<h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/numeric/math/fabs&amp;action=edit&amp;section=5" title="Edit section: Example">edit</a>]</span> <span class="mw-headline" id="Example">Example</span></h3>
+<h3><span class="editsection">[<a href="https://zh.cppreference.com/mwiki/index.php?title=cpp/numeric/math/fabs&amp;action=edit&amp;section=5" title="Edit section: Example">edit</a>]</span> <span class="mw-headline" id="Example">Example</span></h3>
 <div class="t-example"><div class="t-example-live-link"><div class="coliru-btn coliru-btn-run-init">Run this code</div></div>
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="co2">#include &lt;iostream&gt;</span>
 <span class="co2">#include &lt;cmath&gt;</span>
@@ -564,37 +564,37 @@ abs(-3.0) = 3
 abs(-0.0) = 0
 abs(-Inf) = inf</pre></div></div> 
 </div>
-<h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/numeric/math/fabs&amp;action=edit&amp;section=6" title="Edit section: See also">edit</a>]</span> <span class="mw-headline" id="See_also">See also</span></h3>
+<h3><span class="editsection">[<a href="https://zh.cppreference.com/mwiki/index.php?title=cpp/numeric/math/fabs&amp;action=edit&amp;section=6" title="Edit section: See also">edit</a>]</span> <span class="mw-headline" id="See_also">See also</span></h3>
 <table class="t-dsc-begin">
 
 <tr class="t-dsc">
 <td>  <div class="t-dsc-member-div"><div><a href="abs.html" title="cpp/numeric/math/abs"> <span class="t-lines"><span>abs<span class="t-dsc-small">(int)</span></span><span>labs</span><span>llabs</span></span></a></div><div><span class="t-lines"><span></span><span></span><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div>
 </td>
-<td>   computes absolute value of an integral value (<span class="texhtml" style="white-space: nowrap;">|x|</span>)  <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:cpp/numeric/math/dsc_abs&amp;action=edit">[edit]</a></span>
+<td>   computes absolute value of an integral value (<span class="texhtml" style="white-space: nowrap;">|x|</span>)  <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://zh.cppreference.com/mwiki/index.php?title=Template:cpp/numeric/math/dsc_abs&amp;action=edit">[edit]</a></span>
 </td></tr>
 
 <tr class="t-dsc">
 <td>  <div class="t-dsc-member-div"><div><a href="copysign.html" title="cpp/numeric/math/copysign"> <span class="t-lines"><span>copysign</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div>
 </td>
-<td>   copies the sign of a floating point value  <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:cpp/numeric/math/dsc_copysign&amp;action=edit">[edit]</a></span>
+<td>   copies the sign of a floating point value  <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://zh.cppreference.com/mwiki/index.php?title=Template:cpp/numeric/math/dsc_copysign&amp;action=edit">[edit]</a></span>
 </td></tr>
 
 <tr class="t-dsc">
 <td>  <div class="t-dsc-member-div"><div><a href="signbit.html" title="cpp/numeric/math/signbit"> <span class="t-lines"><span>signbit</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div>
 </td>
-<td>   checks if the given number is negative  <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:cpp/numeric/math/dsc_signbit&amp;action=edit">[edit]</a></span>
+<td>   checks if the given number is negative  <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://zh.cppreference.com/mwiki/index.php?title=Template:cpp/numeric/math/dsc_signbit&amp;action=edit">[edit]</a></span>
 </td></tr>
 
 <tr class="t-dsc">
 <td>  <div class="t-dsc-member-div"><div><a href="../complex/abs.html" title="cpp/numeric/complex/abs"> <span class="t-lines"><span>abs<span class="t-dsc-small">(std::complex)</span></span></span></a></div></div>
 </td>
-<td>   returns the magnitude of a complex number  <br> <span class="t-mark">(function template)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:cpp/numeric/complex/dsc_abs&amp;action=edit">[edit]</a></span>
+<td>   returns the magnitude of a complex number  <br> <span class="t-mark">(function template)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://zh.cppreference.com/mwiki/index.php?title=Template:cpp/numeric/complex/dsc_abs&amp;action=edit">[edit]</a></span>
 </td></tr>
 
 <tr class="t-dsc">
 <td>  <div class="t-dsc-member-div"><div><a href="../valarray/abs.html" title="cpp/numeric/valarray/abs"> <span class="t-lines"><span>abs<span class="t-dsc-small">(std::valarray)</span></span></span></a></div></div>
 </td>
-<td>   applies the function <span class="t-c"><span class="mw-geshi cpp source-cpp">std<span class="sy4">::</span><span class="me2">abs</span></span></span> to each element of valarray  <br> <span class="t-mark">(function template)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:cpp/numeric/valarray/dsc_abs&amp;action=edit">[edit]</a></span>
+<td>   applies the function <span class="t-c"><span class="mw-geshi cpp source-cpp">std<span class="sy4">::</span><span class="me2">abs</span></span></span> to each element of valarray  <br> <span class="t-mark">(function template)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://zh.cppreference.com/mwiki/index.php?title=Template:cpp/numeric/valarray/dsc_abs&amp;action=edit">[edit]</a></span>
 </td></tr>
 
 <tr class="t-dsc">
@@ -617,7 +617,7 @@ Expensive parser function count: 0/100
 </div>                    <!-- /bodycontent -->
                                         <!-- printfooter -->
                     <div class="printfooter">
-                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/numeric/math/fabs&amp;oldid=88521">https://en.cppreference.com/mwiki/index.php?title=cpp/numeric/math/fabs&amp;oldid=88521</a>"                    </div>
+                    Retrieved from "<a href="https://zh.cppreference.com/mwiki/index.php?title=cpp/numeric/math/fabs&amp;oldid=88521">https://zh.cppreference.com/mwiki/index.php?title=cpp/numeric/math/fabs&amp;oldid=88521</a>"                    </div>
                     <!-- /printfooter -->
                                                             <!-- catlinks -->
                     <div id="catlinks" class="catlinks catlinks-allhidden"></div>                    <!-- /catlinks -->
@@ -635,12 +635,12 @@ Expensive parser function count: 0/100
                         <div id="cpp-navigation">
             <h5>Navigation</h5>
             <ul>
-<li id="n-Support-us"><a href="http://www.cppreference.com/support" rel="nofollow">Support us</a></li><li id="n-recentchanges"><a href="https://en.cppreference.com/w/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-FAQ"><a href="https://en.cppreference.com/w/Cppreference:FAQ">FAQ</a></li><li id="n-Offline-version"><a href="https://en.cppreference.com/w/Cppreference:Archives">Offline version</a></li>            </ul>
+<li id="n-Support-us"><a href="http://www.cppreference.com/support" rel="nofollow">Support us</a></li><li id="n-recentchanges"><a href="https://zh.cppreference.com/w/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-FAQ"><a href="https://zh.cppreference.com/w/Cppreference:FAQ">FAQ</a></li><li id="n-Offline-version"><a href="https://zh.cppreference.com/w/Cppreference:Archives">Offline version</a></li>            </ul>
         </div>
                         <div id="cpp-toolbox">
             <h5><span>Toolbox</span><a href="fabs.html#"></a></h5>
             <ul>
-<li id="t-whatlinkshere"><a href="https://en.cppreference.com/w/Special:WhatLinksHere/cpp/numeric/math/fabs" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="https://en.cppreference.com/w/Special:RecentChangesLinked/cpp/numeric/math/fabs" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-upload"><a href="http://upload.cppreference.com/w/Special:Upload" title="Upload files [u]" accesskey="u">Upload file</a></li><li id="t-specialpages"><a href="https://en.cppreference.com/w/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-print"><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/numeric/math/fabs&amp;printable=yes" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li><li id="t-permalink"><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/numeric/math/fabs&amp;oldid=88521" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/numeric/math/fabs&amp;action=info">Page information</a></li>            </ul>
+<li id="t-whatlinkshere"><a href="https://zh.cppreference.com/w/Special:WhatLinksHere/cpp/numeric/math/fabs" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="https://zh.cppreference.com/w/Special:RecentChangesLinked/cpp/numeric/math/fabs" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-upload"><a href="http://upload.cppreference.com/w/Special:Upload" title="Upload files [u]" accesskey="u">Upload file</a></li><li id="t-specialpages"><a href="https://zh.cppreference.com/w/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-print"><a href="https://zh.cppreference.com/mwiki/index.php?title=cpp/numeric/math/fabs&amp;printable=yes" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li><li id="t-permalink"><a href="https://zh.cppreference.com/mwiki/index.php?title=cpp/numeric/math/fabs&amp;oldid=88521" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="https://zh.cppreference.com/mwiki/index.php?title=cpp/numeric/math/fabs&amp;action=info">Page information</a></li>            </ul>
         </div>
                         <div id="cpp-languages">
             <div><ul><li>In other languages</li></ul></div>
@@ -652,9 +652,9 @@ Expensive parser function count: 0/100
                                     <li id="footer-info-viewcount">This page has been accessed 165,330 times.</li>
                             </ul>
                     <ul id="footer-places">
-                                    <li id="footer-places-privacy"><a href="https://en.cppreference.com/w/Cppreference:Privacy_policy" title="Cppreference:Privacy policy">Privacy policy</a></li>
-                                    <li id="footer-places-about"><a href="https://en.cppreference.com/w/Cppreference:About" title="Cppreference:About">About cppreference.com</a></li>
-                                    <li id="footer-places-disclaimer"><a href="https://en.cppreference.com/w/Cppreference:General_disclaimer" title="Cppreference:General disclaimer">Disclaimers</a></li>
+                                    <li id="footer-places-privacy"><a href="https://zh.cppreference.com/w/Cppreference:Privacy_policy" title="Cppreference:Privacy policy">Privacy policy</a></li>
+                                    <li id="footer-places-about"><a href="https://zh.cppreference.com/w/Cppreference:About" title="Cppreference:About">About cppreference.com</a></li>
+                                    <li id="footer-places-disclaimer"><a href="https://zh.cppreference.com/w/Cppreference:General_disclaimer" title="Cppreference:General disclaimer">Disclaimers</a></li>
                             </ul>
                                     <ul id="footer-icons" class="noprint">
                                     <li id="footer-poweredbyico">

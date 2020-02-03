@@ -57,19 +57,19 @@ def nostdout():
 
 class TestConvertLoaderName(unittest.TestCase):
     def test_convert_loader_name(self):
-        url = 'http://en.cppreference.com/mwiki/load.php?debug=false&lang=en&modules=site&only=scripts&skin=cppreference2&*'  # noqa
+        url = 'http://zh.cppreference.com/mwiki/load.php?debug=false&lang=en&modules=site&only=scripts&skin=cppreference2&*'  # noqa
         self.assertEqual('site_scripts.js', convert_loader_name(url))
 
-        url = 'http://en.cppreference.com/mwiki/load.php?debug=false&lang=en&modules=site&only=styles&skin=cppreference2&*'  # noqa
+        url = 'http://zh.cppreference.com/mwiki/load.php?debug=false&lang=en&modules=site&only=styles&skin=cppreference2&*'  # noqa
         self.assertEqual('site_modules.css', convert_loader_name(url))
 
-        url = 'http://en.cppreference.com/mwiki/load.php?debug=false&lang=en&modules=skins.cppreference2&only=scripts&skin=cppreference2&*'  # noqa
+        url = 'http://zh.cppreference.com/mwiki/load.php?debug=false&lang=en&modules=skins.cppreference2&only=scripts&skin=cppreference2&*'  # noqa
         self.assertEqual('skin_scripts.js', convert_loader_name(url))
 
-        url = 'http://en.cppreference.com/mwiki/load.php?debug=false&lang=en&modules=startup&only=scripts&skin=cppreference2&*'  # noqa
+        url = 'http://zh.cppreference.com/mwiki/load.php?debug=false&lang=en&modules=startup&only=scripts&skin=cppreference2&*'  # noqa
         self.assertEqual('startup_scripts.js', convert_loader_name(url))
 
-        url = 'http://en.cppreference.com/mwiki/load.php?debug=false&lang=en&modules=ext.gadget.ColiruCompiler%2CMathJax%7Cext.rtlcite%7Cmediawiki.legacy.commonPrint%2Cshared%7Cskins.cppreference2&only=styles&skin=cppreference2&*'  # noqa
+        url = 'http://zh.cppreference.com/mwiki/load.php?debug=false&lang=en&modules=ext.gadget.ColiruCompiler%2CMathJax%7Cext.rtlcite%7Cmediawiki.legacy.commonPrint%2Cshared%7Cskins.cppreference2&only=styles&skin=cppreference2&*'  # noqa
         self.assertEqual('ext.css', convert_loader_name(url))
 
         with self.assertRaises(Exception):
@@ -150,15 +150,15 @@ class TestIsExternalLink(unittest.TestCase):
 
 class TestPlaceholderLinks(unittest.TestCase):
     # Placeholder link replacement is implemented in the MediaWiki site JS at
-    # https://en.cppreference.com/w/MediaWiki:Common.js
+    # https://zh.cppreference.com/w/MediaWiki:Common.js
 
     def test_is_ranges_placeholder(self):
         match = [
-            'http://en.cppreference.com/w/cpp/ranges-placeholder/concepts/Assignable',  # noqa
-            'http://en.cppreference.com/w/cpp/ranges-placeholder/iterator/Incrementable',  # noqa
-            'http://en.cppreference.com/w/cpp/ranges-algorithm-placeholder/all_any_none_of',  # noqa
-            'http://en.cppreference.com/w/cpp/ranges-iterator-placeholder/dangling',  # noqa
-            'http://en.cppreference.com/w/cpp/ranges-utility-placeholder/swap',  # noqa
+            'http://zh.cppreference.com/w/cpp/ranges-placeholder/concepts/Assignable',  # noqa
+            'http://zh.cppreference.com/w/cpp/ranges-placeholder/iterator/Incrementable',  # noqa
+            'http://zh.cppreference.com/w/cpp/ranges-algorithm-placeholder/all_any_none_of',  # noqa
+            'http://zh.cppreference.com/w/cpp/ranges-iterator-placeholder/dangling',  # noqa
+            'http://zh.cppreference.com/w/cpp/ranges-utility-placeholder/swap',  # noqa
         ]
         for target in match:
             self.assertTrue(is_ranges_placeholder(target),
@@ -169,13 +169,13 @@ class TestPlaceholderLinks(unittest.TestCase):
                             msg="Should match '{}'".format(target))
 
         nomatch = [
-            'http://en.cppreference.com/w/cpp/ranges--placeholder/swap',
-            'https://en.cppreference.com/w/cpp/ranges--placeholder/swap',
+            'http://zh.cppreference.com/w/cpp/ranges--placeholder/swap',
+            'https://zh.cppreference.com/w/cpp/ranges--placeholder/swap',
             'http://www.mediawiki.org/',
-            'http://en.cppreference.com/w/Cppreference:About',
+            'http://zh.cppreference.com/w/Cppreference:About',
             'http://en.wikipedia.org/wiki/Normal_distribution',
             'https://www.mediawiki.org/',
-            'https://en.cppreference.com/w/Cppreference:About',
+            'https://zh.cppreference.com/w/Cppreference:About',
             'https://en.wikipedia.org/wiki/Normal_distribution',
             'w/cpp.html',
             'w/cpp/language/expressions.html',
@@ -190,43 +190,43 @@ class TestPlaceholderLinks(unittest.TestCase):
     def test_transform_ranges_placeholder(self):
         entries = [
             # (target, file, expected)
-            ('http://en.cppreference.com/w/cpp/ranges-placeholder/concepts/Assignable',  # noqa
+            ('http://zh.cppreference.com/w/cpp/ranges-placeholder/concepts/Assignable',  # noqa
              'output/reference/en/cpp/concepts/ConvertibleTo.html',
              'Assignable.html'),
 
-            ('http://en.cppreference.com/w/cpp/ranges-placeholder/concepts/Assignable',  # noqa
+            ('http://zh.cppreference.com/w/cpp/ranges-placeholder/concepts/Assignable',  # noqa
              'output/reference/en/cpp/concepts/long/path/ConvertibleTo.html',
              '../../Assignable.html'),
 
-            ('http://en.cppreference.com/w/cpp/ranges-placeholder/concepts/Assignable',  # noqa
+            ('http://zh.cppreference.com/w/cpp/ranges-placeholder/concepts/Assignable',  # noqa
              'output/reference/en/cpp/other/path/ConvertibleTo.html',
              '../../concepts/Assignable.html'),
 
-            ('http://en.cppreference.com/w/cpp/ranges-algorithm-placeholder/all_any_none_of',  # noqa
+            ('http://zh.cppreference.com/w/cpp/ranges-algorithm-placeholder/all_any_none_of',  # noqa
              'output/reference/en/cpp/concepts/ConvertibleTo.html',
              '../algorithm/ranges/all_any_none_of.html'),
 
-            ('http://en.cppreference.com/w/cpp/ranges-algorithm-placeholder/all_any_none_of',  # noqa
+            ('http://zh.cppreference.com/w/cpp/ranges-algorithm-placeholder/all_any_none_of',  # noqa
              'output/reference/en/cpp/algorithm/ConvertibleTo.html',
              'ranges/all_any_none_of.html'),
 
-            ('http://en.cppreference.com/w/cpp/ranges-placeholder/concepts/Assignable',  # noqa
+            ('http://zh.cppreference.com/w/cpp/ranges-placeholder/concepts/Assignable',  # noqa
              'output/reference/en/cpp/experimental/ranges/concepts/View.html',
              'Assignable.html'),
 
-            ('http://en.cppreference.com/w/cpp/ranges-placeholder/concepts/Assignable',  # noqa
+            ('http://zh.cppreference.com/w/cpp/ranges-placeholder/concepts/Assignable',  # noqa
              'output/reference/en/cpp/experimental/ranges/View.html',
              'concepts/Assignable.html'),
 
-            ('http://en.cppreference.com/w/cpp/ranges-placeholder/concepts/Assignable',  # noqa
+            ('http://zh.cppreference.com/w/cpp/ranges-placeholder/concepts/Assignable',  # noqa
              'output/reference/en/cpp/experimental/ranges/range/View.html',
              '../concepts/Assignable.html'),
 
-            ('http://en.cppreference.com/w/cpp/ranges-algorithm-placeholder/all_any_none_of',  # noqa
+            ('http://zh.cppreference.com/w/cpp/ranges-algorithm-placeholder/all_any_none_of',  # noqa
              'output/reference/en/cpp/experimental/ranges/View.html',
              'algorithm/all_any_none_of.html'),
 
-            ('http://en.cppreference.com/w/cpp/ranges-algorithm-placeholder/all_any_none_of',  # noqa
+            ('http://zh.cppreference.com/w/cpp/ranges-algorithm-placeholder/all_any_none_of',  # noqa
              'output/reference/en/cpp/experimental/ranges/range/View.html',
              '../algorithm/all_any_none_of.html'),
         ]

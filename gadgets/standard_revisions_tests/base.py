@@ -24,7 +24,7 @@ from selenium.webdriver.support.ui import Select
 
 class Driver:
     def __init__(self):
-        base_url = "http://en.cppreference.com/"
+        base_url = "http://zh.cppreference.com/"
         driver = webdriver.Firefox()
         driver.implicitly_wait(30)
         try:

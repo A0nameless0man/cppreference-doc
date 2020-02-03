@@ -2,19 +2,19 @@ Information
 -----------
 
 This is source package for Cppreference C++ standard library reference
-documentation available at <http://en.cppreference.com>.
+documentation available at <http://zh.cppreference.com>.
 
 If there is no 'reference/' subdirectory in this package, the actual
 documentation is not present here and must be obtained separately in order to
 build the binary package. This can be done in two ways:
 
  1) Downloading a prepared archive from
- <http://en.cppreference.com/w/Cppreference:Archives>. This method is preferred.
+ <http://zh.cppreference.com/w/Cppreference:Archives>. This method is preferred.
 
  2) Running `make source` which will pull the documentation directly from the
  website page-by-page. You should not normally use this method. The download
  script is updated to take into account any changes of the website only when
- there's new release at <http://en.cppreference.com/w/Cppreference:Archives>.
+ there's new release at <http://zh.cppreference.com/w/Cppreference:Archives>.
  If the layout of the website has changed since the last release, the download
  script might not work. Also, it puts unnecessary load on the servers. Please do
  not use this method unless you know what you are doing.
@@ -36,7 +36,7 @@ documentation formats are currently supported:
 Simply running `make all` will generate documentation in all three formats.
 
 Running `make release` will generate the release archives which are uploaded
-to <http://en.cppreference.com/w/Cppreference:Archives>.
+to <http://zh.cppreference.com/w/Cppreference:Archives>.
 
 Dependencies
 ------------

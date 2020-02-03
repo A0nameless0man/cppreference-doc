@@ -48,7 +48,7 @@ class Index2Browser(IndexTransform):
         res = u''
         res += '<tt><b>{0}</b></tt> [<span class="link">'.format(
             xml_escape(full_name))
-        res += '<a href="http://en.cppreference.com/w/{0}">'.format(
+        res += '<a href="http://zh.cppreference.com/w/{0}">'.format(
             xml_escape(full_link))
         res += '{0}</a></span>] <span class="mark">{1}</span>\n'.format(
             full_link, mark)
