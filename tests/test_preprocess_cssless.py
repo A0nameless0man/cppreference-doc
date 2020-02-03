@@ -41,10 +41,10 @@ class TestPreprocessHtmlMergeCss(unittest.TestCase):
 
         preprocess_html_merge_cssless(src_path, dst_path)
 
-        with open(dst_path, 'r') as a_file:
+        with open(dst_path, 'r',encoding='utf-8') as a_file:
             test = a_file.read()
 
-        with open(expected_path, 'r') as a_file:
+        with open(expected_path, 'r',encoding='utf-8') as a_file:
             expected = a_file.read()
 
         self.assertEqual(test, expected)
@@ -61,10 +61,10 @@ class TestPreprocessHtmlMergeCss(unittest.TestCase):
 
         preprocess_html_merge_cssless(src_path, dst_path)
 
-        with open(dst_path, 'r') as a_file:
+        with open(dst_path, 'r',encoding='utf-8') as a_file:
             test = a_file.read()
 
-        with open(expected_path, 'r') as a_file:
+        with open(expected_path, 'r',encoding='utf-8') as a_file:
             expected = a_file.read()
 
         self.assertEqual(test, expected)

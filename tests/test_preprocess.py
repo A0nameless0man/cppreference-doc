@@ -262,7 +262,7 @@ class TestPreprocessHtml(unittest.TestCase):
     # Check whether the HTML matches the contents of the specified test data
     # file
     def check_output(self, expected_file):
-        with open(os.path.join(self.testdata, expected_file), 'rb') as f:
+        with open(os.path.join(self.testdata, expected_file), 'rb',encoding='utf-8') as f:
             expected = f.read()
         with io.BytesIO() as buf:
             self.html.write(buf, encoding='utf-8', method='html')

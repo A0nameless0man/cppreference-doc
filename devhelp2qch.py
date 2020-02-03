@@ -44,7 +44,7 @@ def main():
     in_tree = etree.parse(src_path, parser)
     file_tree = etree.parse(file_path, parser)
 
-    out_f = open(dst_path, 'wb')
+    out_f = open(dst_path, 'wb',encoding='utf-8')
     out_f.write(convert_devhelp_to_qch(in_tree.getroot(), file_tree.getroot(),
                                        v_folder))
     out_f.close()

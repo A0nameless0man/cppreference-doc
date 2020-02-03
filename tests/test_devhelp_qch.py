@@ -36,13 +36,13 @@ class TestConvertDevhelpToQch(unittest.TestCase):
         file_tree = etree.parse(file_list_fn, parser)
         files_root = file_tree.getroot()
 
-        with open(expected_path, 'rb') as expected_f:
+        with open(expected_path, 'rb',encoding='utf-8') as expected_f:
             expected = expected_f.read()
 
         result = convert_devhelp_to_qch(in_root, files_root, 'virtual_folder')
 
         if expected != result:
-            with open(dest_path, 'wb') as result_f:
+            with open(dest_path, 'wb',encoding='utf-8') as result_f:
                 result_f.write(result)
 
         self.assertEqual(expected, result)

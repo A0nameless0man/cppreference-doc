@@ -31,14 +31,14 @@ class TestTransformDevhelp(unittest.TestCase):
             dir_path, 'devhelp_data/expected.xml')
         dest_path = os.path.join(dir_path, 'devhelp_data/result.xml')
 
-        with open(expected_path, 'rb') as expected_f:
+        with open(expected_path, 'rb',encoding='utf-8') as expected_f:
             expected = expected_f.read()
 
         result = transform_devhelp('book_title', 'book_name', 'book_base',
                                    'rel_link', chapters_fn, functions_fn)
 
         if expected != result:
-            with open(dest_path, 'wb') as result_f:
+            with open(dest_path, 'wb',encoding='utf-8') as result_f:
                 result_f.write(result)
 
         self.assertEqual(expected, result)
