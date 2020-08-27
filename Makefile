@@ -243,7 +243,7 @@ source:
 	wget --adjust-extension --page-requisites --convert-links \
 		--force-directories --recursive --level=15 \
 		--span-hosts --domains=zh.cppreference.com,upload.cppreference.com \
-		--reject-regex $$regex \
+		--reject-regex $$regex  -e robots=off\
 		--timeout=5 --tries=50 --no-verbose \
 		--retry-connrefused --waitretry=10 --read-timeout=20 \
 		https://zh.cppreference.com/w/ ; \
