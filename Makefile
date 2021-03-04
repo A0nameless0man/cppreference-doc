@@ -241,12 +241,12 @@ source:
 	regex+="|.*action=.*|.*printable=.*|.*zh.cppreference.com/book.*" ; \
 	echo $$regex ; \
 	wget --adjust-extension --page-requisites --convert-links \
-		--force-directories --recursive --level=15 \
-		--span-hosts --domains=zh.cppreference.com,upload.cppreference.com \
-		--reject-regex $$regex  -e robots=off\
-		--timeout=5 --tries=50 --no-verbose \
-		--retry-connrefused --waitretry=10 --read-timeout=20 \
-		https://zh.cppreference.com/w/ ; \
+			--force-directories --recursive --level=15 \
+			--span-hosts --domains=zh.cppreference.com,upload.cppreference.com \
+			--reject-regex $$regex -e robots=off\
+			--timeout=5 --tries=50 --no-verbose \
+			--retry-connrefused --waitretry=10 --read-timeout=20 \
+			https://zh.cppreference.com/w/ ; \
 	popd > /dev/null
 
-	./export.py --url=http://zh.cppreference.com/mwiki reference/cppreference-export-ns0,4,8,10.xml 0 4 8 10
+
