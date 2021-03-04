@@ -326,6 +326,8 @@ def remove_ads(html):
     for el in html.xpath('//script[@src]'):
         if 'carbonads.com/carbon.js' in el.get('src'):
             el.getparent().remove(el)
+        if 's3.buysellads.com/ac/bsa.js' in el.get('src'):
+            el.getparent().remove(el)
     for el in html.xpath('/html/body/style'):
         if el.text is not None and '#carbonads' in el.text:
             el.getparent().remove(el)
